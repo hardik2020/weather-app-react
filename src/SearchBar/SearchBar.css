@@ -1,0 +1,25 @@
+.search_input{
+    width: 80%;
+    font-size: 3vh;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    height:8vh;
+    background: transparent;
+    color:white;
+}
+::placeholder{
+    color:white;
+}
+
+.search_input:focus{
+    border-bottom: 1px solid #111;
+}
+
+.searchButton{
+    height:8vh;
+    width:15%;
+    font-size: 1.8vh;
+    color:gray;
+    border: none;
+}

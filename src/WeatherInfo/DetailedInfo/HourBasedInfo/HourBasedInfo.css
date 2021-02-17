@@ -1,0 +1,26 @@
+.hourContainer{
+    margin-top: 20vh;
+    margin-right: 1vw;
+    
+    height:12vh;
+    display:inline-flex;
+    color: white;
+}
+
+.hourDetails
+{
+    width:11vw;
+    margin-right:1vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    transition:0.3s;
+    animation: ease-in;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.hourDetails:hover{
+    margin-right:1vw;
+    transform: scale(1.15);
+}
