@@ -41,12 +41,12 @@ export default class WeatherInfo extends Component {
         if(this.props.city)
         {
             weatherinfo = (
-                <div className="div2">
+                <div className="div1">
                     <DetailedInfo min={this.state.min} max={this.state.max} changeImage={this.props.changeImage} date={this.state.date} day={this.state.day} city={this.props.arr[0].city} country={this.props.arr[0].country} hour={this.state.hour}/>
                     <div className='nextDays'>
                         {
                             this.props.arr.map((item,index)=>{
-                                return <NextDay key={index} min={item.min} max={item.max} day={item.day} changeIndex={()=>{this.changeIndex(index)}}/>
+                                return <NextDay key={index} min={item.min} max={item.max} icon={item.icon} changeImage={this.props.changeImage} url={item.url} day={item.day} changeIndex={()=>{this.changeIndex(index)}}/>
                             })
                         }
                     </div>
@@ -54,9 +54,9 @@ export default class WeatherInfo extends Component {
             )
         }
         return (
-            <div className="div1">
+            <>
                 {weatherinfo}
-            </div>
+            </>
         )
     }
 }

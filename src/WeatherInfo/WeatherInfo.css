@@ -1,4 +1,21 @@
 .nextDays{
     display: inline-flex;
     width: 100%;
+    height:20vh;
+    margin-top:20px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.div1
+{
+    width:100%;
+    height:92vh;
+    margin:0;
+    padding:0;
+}
+.div2{
+    margin: 0;
+    width:100%;
+    height:92vh;
+    padding: 0;
 }

@@ -1,12 +1,12 @@
 .DayCard{
     
     color:white;
-    width: 40vw;
+    width: 42vw;
     height:12vh;
-    font-size: 1.2vw;
+    font-size: 16px;
     padding :1vw;
-    margin-left: 1.6vw;
-    margin-right: 1.6vw;
+    font-weight: bold;
+    margin-right: 1.2vw;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
     background: rgba(255,255,255,0.1);
@@ -18,9 +18,31 @@
 }
 
 .DayCard:hover{
-    transform: scale(1.15);
-    font-size: 1.2vw;
-    margin-left: 1.6vw;
-    margin-right: 1.6vw;
+    transform: scale(1.1);
+    font-size: 16px;
+    width:42vw;
+    margin-right: 1.2vw;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 750px)
+{
+    .DayCard{
+    
+        color:white;
+        width: 62vw;
+        height:12vh;
+        font-size: 13px;
+        padding :1vw;
+        font-weight: bold;
+        margin-right: 1.2vw;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        border-radius: 15px;
+        background: rgba(255,255,255,0.1);
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        transition:0.3s;
+        animation: ease-in;
+    }
 }

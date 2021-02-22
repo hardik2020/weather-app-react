@@ -9,7 +9,7 @@ export default function HourBasedInfo(props) {
             {
                 props.hour.map((item,index)=>{
                     return <div key={index} className="hourDetails" onClick={()=>{
-                            props.changeImage(item.url.slice(-7,-4));
+                            props.changeImage(item.icon);
                         }}><center>{item.time}<br/>{Math.floor(item.temp)}<sup>o</sup>C
                         <br/><img src={item.url}/></center>
                     </div>
