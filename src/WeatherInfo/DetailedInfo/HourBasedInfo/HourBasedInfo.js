@@ -10,8 +10,9 @@ export default function HourBasedInfo(props) {
                 props.hour.map((item,index)=>{
                     return <div key={index} className="hourDetails" onClick={()=>{
                             props.changeImage(item.icon);
-                        }}><center>{item.time}<br/>{Math.floor(item.temp)}<sup>o</sup>C
-                        <br/><img src={item.url}/></center>
+                        }}><center><div className="infocard">{item.time}</div>
+                        <div className="infocard"><img src={item.url} alt=""/></div>
+                        <div className="infocard">{Math.floor(item.temp)}<sup>o</sup>C</div></center>
                     </div>
                 })  
             }

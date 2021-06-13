@@ -1,48 +1,38 @@
 .DayCard{
     
     color:white;
-    width: 42vw;
-    height:12vh;
+    width: 90px;
+    height:95px;
     font-size: 16px;
-    padding :1vw;
-    font-weight: bold;
-    margin-right: 1.2vw;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    padding :10px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.21);
     border-radius: 15px;
     background: rgba(255,255,255,0.1);
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    transition:0.3s;
-    animation: ease-in;
+    margin-bottom: 10px;
 }
-
-.DayCard:hover{
-    transform: scale(1.1);
-    font-size: 16px;
-    width:42vw;
-    margin-right: 1.2vw;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+.icon{
+    width:35px;
+    height:auto;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    filter:invert(100%);
 }
-
-@media screen and (max-width: 750px)
+.day{
+    color:white;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+@media screen and (min-width:760px)
 {
     .DayCard{
-    
-        color:white;
-        width: 62vw;
-        height:12vh;
-        font-size: 13px;
-        padding :1vw;
-        font-weight: bold;
-        margin-right: 1.2vw;
-        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-        border-radius: 15px;
-        background: rgba(255,255,255,0.1);
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        transition:0.3s;
-        animation: ease-in;
+        width:170px;
+        height: 100px;
+        margin-left:40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
     }
 }

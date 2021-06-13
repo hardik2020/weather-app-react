@@ -3,12 +3,14 @@ import './NextDay.css'
 
 export default function NextDay(props) {
     return (
-        <div className='DayCard' onClick={()=>{
-            props.changeIndex();
-            props.changeImage(props.icon);
-            }}>
-            <center>{Math.floor(props.min)}<sup>o</sup>C/{Math.floor(props.max)}<sup>o</sup>C<br/>
-            {props.day}<br/><img src={props.url} /></center>
+        <div>
+            <div className="day">{props.day}</div>
+            <div className='DayCard' onClick={()=>{
+                props.changeIndex();
+                props.changeImage(props.icon);
+                }}>
+                <center><img src={props.url} className="icon" alt=""/><br/>{Math.floor((props.min+props.max)/2)}<sup>o</sup>C<br/></center>
+            </div>
         </div>
     )
 }

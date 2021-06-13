@@ -17,12 +17,12 @@ export default class WeatherInfo extends Component {
     componentDidUpdate()
     {
         console.log(this.props);
-        if(this.state.min!=this.props.arr[this.state.index].min)
+        if(this.state.min!==this.props.arr[this.state.index].min)
         {
             this.setState({min:this.props.arr[this.state.index].min,max:this.props.arr[this.state.index].max,day:this.props.arr[this.state.index].day,date:this.props.arr[this.state.index].date,hour:this.props.arr[this.state.index].hour});
             console.log("update");
         }
-        else if(this.state.city!=this.props.city)
+        else if(this.state.city!==this.props.city)
         {
             this.setState({min:this.props.arr[this.state.index].min,max:this.props.arr[this.state.index].max,city:this.props.city,index:0,day:this.props.arr[this.state.index].day,date:this.props.arr[this.state.index].date,hour:this.props.arr[this.state.index].hour});
             console.log("update");
@@ -35,14 +35,14 @@ export default class WeatherInfo extends Component {
     
     
     render() {
-        console.log("rendr");
-        console.log(this.state.index);
+        //console.log("rendr");
+        //console.log(this.state.index,this.state.min,this.state.max);
         let weatherinfo = null;
         if(this.props.city)
         {
             weatherinfo = (
                 <div className="div1">
-                    <DetailedInfo min={this.state.min} max={this.state.max} changeImage={this.props.changeImage} date={this.state.date} day={this.state.day} city={this.props.arr[0].city} country={this.props.arr[0].country} hour={this.state.hour}/>
+                    <DetailedInfo min={this.state.min} max={this.state.max} url={this.props.url} changeImage={this.props.changeImage} date={this.state.date} day={this.state.day} city={this.props.arr[0].city} country={this.props.arr[0].country} hour={this.state.hour}/>
                     <div className='nextDays'>
                         {
                             this.props.arr.map((item,index)=>{
